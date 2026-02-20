@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openai-whisper-api-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "Simple CLI wrapper for OpenAI Speech-to-Text API"
 readme = "README.md"
 license = "MIT"
@@ -13,7 +13,6 @@ keywords = ["openai", "whisper", "speech-to-text", "transcription", "cli"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
@@ -27,9 +26,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/grigorijpotemkin/openai-whisper-api-cli"
-Issues = "https://github.com/grigorijpotemkin/openai-whisper-api-cli/issues"
-Repository = "https://github.com/grigorijpotemkin/openai-whisper-api-cli"
+Homepage = "https://github.com/NmadeleiDev/openai-whisper-api-cli"
+Issues = "https://github.com/NmadeleiDev/openai-whisper-api-cli/issues"
+Repository = "https://github.com/NmadeleiDev/openai-whisper-api-cli"
 
 [project.optional-dependencies]
 dev = [

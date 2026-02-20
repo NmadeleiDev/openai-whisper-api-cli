@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openai-whisper-api-cli"
+version = "0.1.0"
+description = "Simple CLI wrapper for OpenAI Speech-to-Text API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["openai", "whisper", "speech-to-text", "transcription", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Software Development :: User Interfaces",
+]
+dependencies = [
+  "click>=8.1.7",
+  "openai>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/grigorijpotemkin/openai-whisper-api-cli"
+Issues = "https://github.com/grigorijpotemkin/openai-whisper-api-cli/issues"
+Repository = "https://github.com/grigorijpotemkin/openai-whisper-api-cli"
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2.2",
+  "pytest>=8.2.0",
+  "twine>=5.1.1",
+]
+
+[project.scripts]
+owhisper = "whisper_cli.cli:cli"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["whisper_cli"]
